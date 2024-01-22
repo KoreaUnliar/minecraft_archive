@@ -1,0 +1,1 @@
+execute as @e[tag=gini] at @s run data merge entity @s {SleepingX:1258,SleepingY:64,SleepingZ:-1592}

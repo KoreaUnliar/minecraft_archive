@@ -1,0 +1,5 @@
+execute as @e[tag=gini] at @s if entity @e[tag=gini,type=villager] run effect give @s invisibility infinite 255 true
+kill @e[tag=gini,type=villager]
+summon armor_stand 1260 64 -1593 {Silent:1b,Invulnerable:1b,ShowArms:1b,Marker:1b,NoBasePlate:1b,Tags:["gini"], ArmorItems:[{id:"minecraft:leather_boots",Count:1b}, {id:"minecraft:leather_leggings",Count:1b}, {id:"minecraft:leather_chestplate",Count:1b}, {id:"minecraft:player_head",Count:1b, tag:{SkullOwner:{Id:[I;-890390677,1521176146,-1714862957,-2049553727], Properties:{textures:[{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZlZGU3MmQ5ZmM1YjI1ZWEyODU2ZDMxY2I2ZDFiMzkzNjliZDQ3MzIyODNjMGNkYjQ1OTk3MzQ2MWE4NDBiYyJ9fX0="}]}}}}]}
+execute as @e[tag=gini] at @s run tellraw @p [{"text":"\n바꾼 저의 모습 어떠신가요?","color":"aqua"}]
+scoreboard players add #suc cmd.suc 1

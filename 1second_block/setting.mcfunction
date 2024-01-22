@@ -1,0 +1,2 @@
+execute as @p at @s run playsound block.note_block.pling master @s ~ ~ ~ 100 0.1 1
+tellraw @p [{"text":"-------------------------","color":"green","bold":true},{"text":"\n시작할때 준비시간 주기: ","color":"gold"},{"nbt":"data.text","entity":"@e[tag=sp_block_data,limit=1]","interpret":true,"clickEvent":{"action":"run_command","value":"/function unliar:1second_block/change_time"}},{"text":"\n-------------------------"}]
