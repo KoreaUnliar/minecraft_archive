@@ -3,73 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아카이브</title>
+    <title>Unliar Server</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        
-        body {
-  background: #2b2b2b;
-}
-        button {
-  margin: 20px;
-}
-.custom-btn {
-  /* width: 130px;
-  height: 40px; */
-  color: #fff;
-  background-color: #121212;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: darkslateblue;
+}
+
+.wrap{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align: center;
+}
+
+.computer-icon{
+    font-size:10rem
+}
+
+.large-text{
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom:5px
+}
+
+.small-text{
+    font-size:1.5rem
+}
+
+
+#typing-string{
+    position: relative;
+    display:inline-block;
+}
+
+#typing-string::after{
+    content:"";
+    display:block;
+    position: absolute;
+    top: 0;
+    right:-10px;
+    width:4px;
+    height:100%;
+    background-color:white;
+}
+
+#typing-string.active::after{
+    display:none;
+}
+
+button{
+    margin:20px;
+    background-color: black;
+}
+
+.btn{
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align: center;
+    font-size:25px;
+    padding: 10px 30px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.news-page{
+    position: absolute;
+    top:120%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align: center;
+    font-size:25px;
+}
     </style>
 </head>
-<script>
-    function move(path){
-        location.href='https://raw.githubusercontent.com/KoreaUnliar/minecraft_archive/main/'+path+'.mcfunction'
-    }
-</script>
 <body>
-    <button class="custom-btn btn-7" onclick="move('server/welcome_drink')">server/welcome_drink</button>
-    <button class="custom-btn btn-7" onclick="move('server/reward_normal')">server/reward_normal</button>
-    <button class="custom-btn btn-7" onclick="move('server/reward_hidden')">server/reward_hidden</button>
-    <button class="custom-btn btn-7" onclick="move('legand_sword/circles_effect')">legand_sword/circles_effect</button>
-    <button class="custom-btn btn-7" onclick="move('legand_sword/reset_sword')">legand_sword/reset_sword</button>
-    <button class="custom-btn btn-7" onclick="move('legand_sword/sword_event')">legand_sword/sword_event</button>
-    <button class="custom-btn btn-7" onclick="move('legand_sword/sword_interaction')">legand_sword/sword_interaction</button>
-    <button class="custom-btn btn-7" onclick="move('big_clock/display')">big_clock/display</button>
-    <button class="custom-btn btn-7" onclick="move('big_clock/score_time')">big_clock/score_time</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/change_time')">1second_block/change_time</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/clear')">1second_block/clear</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/fail')">1second_block/fail</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/init')">1second_block/init</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/setting')">1second_block/setting</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/start')">1second_block/start</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/timer')">1second_block/timer</button>
-    <button class="custom-btn btn-7" onclick="move('1second_block/wait_timer')">1second_block/wait_timer</button>
-    <button class="custom-btn btn-7" onclick="move('gini/reset_gini')">gini/reset_gini</button>
-    <button class="custom-btn btn-7" onclick="move('gini/talk/2ex')">gini/talk/2ex</button>
-    <button class="custom-btn btn-7" onclick="move('gini/talk/gini_change')">gini/talk/gini_change</button>
-    <button class="custom-btn btn-7" onclick="move('gini/talk/gini_infor')">gini/talk/gini_infor</button>
-    <button class="custom-btn btn-7" onclick="move('gini/talk/message')">gini/talk/message</button>
-    <button class="custom-btn btn-7" onclick="move('gini/talk/server_infor')">gini/talk/server_infor</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/create_bossbar')">gini/scene/create_bossbar</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/cum')">gini/scene/cum</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/edit_bossbar')">gini/scene/edit_bossbar</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/girl')">gini/scene/girl</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/semen')">gini/scene/semen</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/villager')">gini/scene/villager</button>
-    <button class="custom-btn btn-7" onclick="move('gini/scene/work_armor')">gini/scene/work_armor</button>
-    <button class="custom-btn btn-7" onclick="move('gini/change_gini/girl')">gini/change_gini/girl</button>
-    <button class="custom-btn btn-7" onclick="move('gini/change_gini/villager')">gini/change_gini/villager</button>
+    <div class="wrap">
+        <h1>
+            <span class="material-symbols-outlined computer-icon">
+                computer
+            </span>
+        </h1>
+        <p id="typing-string" class="large-text"></p>
+        <p class="small-text">언리아 서버 | mc.unliar.kro.kr</p>
+    </div>
+    <div class="button-page">
+        <button class="btn" onclick='location.href="./archive.html"'>아카이브</button>
+        <button class="btn" onclick='location.href="http://mc.unliar.kro.kr:8123"'>언리아 서버 맵</button>
+        <button class="btn" onclick='location.href="http://mc.unliar.kro.kr:8804/server/Unliar/overview"'>서버 정보</button>
+    </div>
+    <div class="news-page">
+        <h1 id="">소식</h1>
+        <p>9월 28일 언리아 공식 홈페이지가 생겼습니다.</p>
+        <p>10월 1일 언리아 홈페이지 리뉴얼</p>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=8DWjqegrMOHBJqbf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <!-- <video autoplay controls loop poster="aaa" preload="bbb" id="lol">
+            <source src="lol.mp4" type="video/mp4">
+            zzz
+          </video> -->
+    </div>
+    <script>
+let typing_target = document.querySelector("#typing-string");
+
+const BLINK_SECONDS = 500; // 0.5초
+const TYPING_SECONDS = 80; //0.08처
+const TYPING_WAIT_SECONDS = 3000;// 3초
+
+function randomString(){
+    let stringList = ["Hello User!","Hello Player!","You find this page!", "mc.unliar.kro.kr", "UNLIAR", "Hello Everyone!"];
+    const STRING_SELECT_RANDOM = Math.floor(Math.random() * stringList.length);
+    
+    let selectString = stringList[STRING_SELECT_RANDOM];
+    let selectStringArray = selectString.split("");
+    // console.log(selectString);
+    // console.log(selectStringArray);
+    // console.log(STRING_SELECT_RANDOM);
+    
+    return selectStringArray;
+}
+
+function resetTyping(){
+    typing_target.textContent = "";
+    typing(randomString());
+}
+
+//** 한글자씩 텍스트를 출력하는 함수 */
+function typing(randomArray){
+    // console.log(randomArray);
+    if(randomArray.length > 0){
+        typing_target.textContent += randomArray.shift();
+        setTimeout(function(){
+            typing(randomArray);
+        },TYPING_SECONDS);
+    }else{ // randomString 글자수가 한개도 없다면
+        setTimeout(resetTyping,TYPING_WAIT_SECONDS)
+    }
+}
+
+typing(randomString());
+
+
+//** 커서 깜빡임 효과 */
+function blink(){
+    typing_target.classList.toggle("active");
+}
+// blink 함수를 0.5초 마다 호출
+setInterval(blink,BLINK_SECONDS);
+
+
+    </script>
+    
+    <!-- <h1>언리아 서버에 오신것을 환영합니다!</h1>
+    <h2>mc.unliar.kro.kr</h2>
+    <button href="http://mc.unliar.kro.kr:8123">맵 보기</button>
+    <h1>소식</h1>
+    <h2>9월 28일 언리아 공식 홈페이지가 생겼습니다.</h2>
+    <video autoplay controls loop poster="aaa" preload="bbb">
+        <source src="lol.mp4" type="video/mp4" width="100",height="100">
+        zzz
+      </video> -->
 </body>
 </html>
