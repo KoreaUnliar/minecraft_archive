@@ -1,0 +1,3 @@
+tellraw @a[tag=pray] [{"text": "\n\n\n\n\n악마를 소환했다!","color": "green"}]
+tellraw @a[tag=pray] [{"text": "음 고맙군.. ","color": "dark_red","bold": true},{"text": "악마의 정수","color": "gold","bold": true},{"text": "는 보답으로 주마.\n그리고 너가 준 생명 잘 쓰도록하지.","color": "dark_red","bold": true}]
+summon item -399.5 69 55.5 {Invulnerable:1b,PickupDelay:1,Item:{id:"minecraft:echo_shard",Count:1b,tag:{display:{Name:'{"text":"악마의 정수","color":"dark_red","bold":true}',Lore:['{"text":"파란색 악마가 남긴 악마의 정수다.","color":"white"}','{"text":"근데 쓸모는 없음.","color":"yellow","bold":true}']}}}}
